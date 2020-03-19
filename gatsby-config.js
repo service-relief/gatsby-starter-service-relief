@@ -2,13 +2,17 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`
 })
 
+const city = `TODO City`
+const state = `TODO State`
+
 module.exports = {
   siteMetadata: {
-    title: `{City} Service Relief`,
+    title: `${city} Service Relief`,
     description: `A list of local service-industry businesses and their fundraisers to help them get through the local shutdowns.`,
     author: `@boborchard`,
-    state: "{state name}",
-    city: "{city name}",
+    state,
+    city,
+    airtableEmbed: `TODO` // link to documentation
   },
   plugins: [
     `gatsby-plugin-postcss`,
