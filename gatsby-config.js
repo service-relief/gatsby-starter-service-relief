@@ -12,7 +12,7 @@ module.exports = {
     author: `@boborchard`,
     state,
     city,
-    airtableEmbed: `TODO` // link to documentation
+    airtableEmbed: process.env.AIRTABLE_EMBED_ID // link to documentation
   },
   plugins: [
     `gatsby-plugin-postcss`,
