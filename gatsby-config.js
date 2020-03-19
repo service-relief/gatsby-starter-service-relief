@@ -2,8 +2,8 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`
 })
 
-const city = `TODO City`
-const state = `TODO State`
+const city = process.env.CITY || `TODO City`
+const state = process.env.STATE || `TODO State`
 
 module.exports = {
   siteMetadata: {
@@ -23,8 +23,8 @@ module.exports = {
         apiKey: process.env.AIRTABLE_API_KEY,
         tables: [
           {
-            baseId: `appKKJX2Tz4Vq6hKl`, // TODO: make fake,
-            tableName: `tbl0agqWsFRYLgAnV` // TODO: make fake,
+            baseId: process.env.AIRTABLE_BASE_ID || `appKKJX2Tz4Vq6hKl`, // TODO: make fake,
+            tableName: process.env.AIRTABLE_TABLE_NAME || `tbl0agqWsFRYLgAnV` // TODO: make fake,
           }
         ]
       }
