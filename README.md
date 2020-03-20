@@ -38,7 +38,7 @@ Using this template you can set up a service relief site without touching any co
 
 **4. Go Live**
 
-- Add your site to the [directory](https://https://servicerelief.us/submit)
+- Add your site to the [directory](https://servicerelief.us/submit)
 - Spread the word
 
 ## 1️⃣ Get Ready
