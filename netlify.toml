@@ -5,3 +5,7 @@
 	AIRTABLE_TABLE_NAME="set the airtable table name"
 	CITY="set your city"
 	STATE="set your state"
+
+[build]
+  publish = "public"
+  command = "gatsby build"
