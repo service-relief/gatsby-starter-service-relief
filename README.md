@@ -10,120 +10,223 @@
 
 Kick off your city's relief efforts as we all learn to cope with COVID-19 with this starter powered by Gatsby, Airtable, and community efforts.
 
-## 🔧 Configuring a new site
+## Overview
 
-You can get a service relief site up and running without touching any code! You'll need to (possibly) make a few accounts with free tiers from different websites and have two important things configured to have your site working correctly:
+This project is aims to make it as easy as possible to launch and manage an index of resources in your city during the COVID-19 pandemic.
 
-1. An **Airtable base** (like a fancier Google Sheet or Excel spreadsheet): this is where the information to populate fundraisers on the site comes from
-2. A **copy of the code for the site**: this is what defines how the site looks, and takes your data to display on a webpage
+Using this template you can set up a service relief site without touching any code.
 
-### Airtable configuration
+**1. Get Ready**
 
-To setup Airtable, you can automatically create a new base configured for a service relief site by following this link: [https://airtable.com/addBaseFromShare/shroKwQGVsips8KI2?utm_source=airtable_shared_application](https://airtable.com/addBaseFromShare/shroKwQGVsips8KI2?utm_source=airtable_shared_application)
+- Secure a domain name
+- Create your accounts
+  - Create Github Account
+  - Create Netlify Account or Zeit Account
+  - Create Airtable Account
 
-#### Registering and exploring the Service Relief Template
+**2. Set up data source**
 
-It will first prompt you to make an account if you don't have one, fill in name, email, and password and create an account. You can skip the onboarding flow prompts that Airtable pops up (but it's okay if you do them too).
+- Set up Airtable
+- Get ready to deploy
+  - Get keys for env variables
 
-Then you should see several tiles that correspond to individual "Bases" that Airtable has set up for you. You care about the one that was created based on the link you followed above, it should have created a base called "Service Relief Template".
+**3. Deploy your site**
 
-![Workspace showing bases in Airtable](./assets/images/bases.png)
+- Click Deploy button
+- Connect to Airtable, set City/State
+- Configure domain name
 
-If you click on the link you can explore the data prepoulated in it.
+**4. Go Live**
 
-<!-- TODO add information about what NOT to delete and how to add records -->
+- Add your site to the [directory](https://https://servicerelief.us/submit)
+- Spread the word
 
-#### Collecting keys and information you need from Airtable
+## 1️⃣ Get Ready
 
-Now with a base setup, you will need to collect **4 values** from Airtable that the code on your site will use to get information from Airtable automatically.
+### Secure a domain name
 
-1. Your **API key**: this is yours and yours alone, your site can use it to prove to Airtable that your account is trying to get information, sort of like a key for a safe deposit box
+Generally we're using the pattern `citynameservicerelief.com` -- for example:
 
-Find your API key by navigating to your account at this link: [https://airtable.com/account](https://airtable.com/account), you should see a section labeled API and a button to "Generate API key".
+- `austinservicerelief.com`
+- `seattleservicerelief.com`
 
-![Button to generate API key](./assets/images/generate.png)
+### Create your accounts
 
-Click the button and and then click on the dots to show your key, copy it somewhere you can access it when you're setting up your site.
+First, you'll need to create a few accounts with free tiers from different software services.
 
-![API key to copy](./assets/images/copy-key.png)
+#### 👉🏼 Create a GitHub Account
 
-1. The Service Relief Template **Base ID**: the base is where all your tables are stored, Airtable needs to know which base to grab data from.
+If you have a GitHub account, go ahead and [log in](https://github.com/join). If not, [sign up for an account](https://github.com/join).
 
-Find your Base ID by navigating to this link: [https://airtable.com/api](https://airtable.com/api), if you are signed in and have created a base from the provided template you should see a list of bases in your workspace. Click on the one called "Service Relief Template".
+#### 👉🏼 Create a Netlify Account
 
-![An Airtable base ID in the API section](./assets/images/base-id.png)
+If you have a Netlify account, go ahead and [log in](https://app.netlify.com/signup). If not, [sign up for an account](https://github.com/join). (_Recommend logging in with GitHub._)
 
-1. The Service Relief Template **Table ID**: a table ID is needed by your site to tell Airtable what table of information to get the data from, out of the base that you provide (with the Base ID).
+#### 👉🏼 Create an Airtable Account
 
-Find your Table ID by clicking on your "Service Relief Template" from the home page (when signed in): [https://airtable.com/](https://airtable.com/)
+If you have an Airtable account, go ahead and [log in](https://airtable.com/login). If not, [sign up for an account](https://airtable.com/signup).
 
-Then the ID can be found in the URL (or part of the website domain) between after the first slash ("/") and second slash (`https://airtable.com/your-table-id-is-in-this-section/viwJTsGfqvhs47lq5`). For example, if my Service Relief Template has this url: `https://airtable.com/tblPUzBVNnTqzCxYm/viwJTsGfqvhs47lq5`, my Table ID would be the part after `airtable.com/` and before `viwJTsGfqvhs47lq5`. You'll know it's your Table ID because it's prepended with `tbl`, in this case it's: `tblPUzBVNnTqzCxYm`.
+## 2️⃣ Set up your data source
 
-![An Airtable table ID from the url of your base](./assets/images/table-id.png)
+### Set up Airtable base
 
-1. The Service Relief Template's **submission form embed ID**: this is connected to a submission form that was created for you that will allow users on the site to submit potential fundraisers directly to your Airtable base, nice!
+To set up Airtable, you can use a base template configured specifically for a service relief site.
 
-Find you submission form embed ID by clicking on "Grid View" at the top left of your base, and selecting "Submit a Fundraiser".
+👉🏼 [Open the template](https://airtable.com/addBaseFromShare/shroKwQGVsips8KI2?utm_source=airtable_shared_application) and click "Add base".
 
-![Form view](./assets/images/form-view.png)
+![Workspace showing bases in Airtable](./assets/images/airtable-base-copy.png)
 
-This will take you to the form view, which should display a submission form that was automatically created when your base was created by the template. To get this ID, you need to click the "Share Form" button, then you should see a link, copy everything after `https://airtable.com/`
+Then you should see several tiles that correspond to individual "Bases" that Airtable has set up for you. Look for "Service Relief Template".
 
-![Embed ID](./assets/images/embed-id.png)
+👉🏼 Hover over the "Service Relief Template" tile, and click the "down" caret that appears. Replace the text **"Service Relief Template"** with something like **"Service Relief Austin"**. (_Use your city name_).
 
-With all 4 values copied. You are ready to set up the code portion of the site.
+![Rename airtable base](./assets/images/rename-airtable-base.gif)
 
-### Code configuration
+### Collect keys from Airtable
 
-You will need to copy the code from this site and deploy it to make it available to anyone visitng your page on the internet, the place that your webpage's files live is where it is hosted. The easiest way to do so is by clicking on a set up button which will help you get setup a hosting service. These steps have instructions for Netlify though the process is very similar for other providers. You only need to choose one.
+In order for your site to grab the data from your Airtable document, you'll need to collect **4 key values**.
 
-This button is for Netlify:
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/service-relief/gatsby-starter-service-relief)
-
-And this is for Zeit Now:
-
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/service-relief/gatsby-starter-service-relief)
-
-When you click on one of these buttons, the link will take you to the service and start you on the setup process by making 2 accounts, one on the hosting service, and one on GitHub. The hosting service will add your code to GitHub (a code storing service) for you and prompt you to create an account for it as well.
-
-#### Netlify hosting configuration
-
-Clicking on the deploy button will take you to this screen:
-
-![Netlify deploy flow](./assets/images/start-flow.png)
-
-Click "Connect to GitHub" which will have you setup a GitHub account, you can select a Free plan, but you will need to verify your email to connect it to Netlify.
-
-After connecting, you can name keep the default name (no one will see this but you) and click "Save & Deploy". You will also need to setup a Netlify account now in order to save your site to your account.
-
-![Netlify deploy flow](./assets/images/name-and-save.png)
-
-Your Netlify account will now be linked to the code that was copied on GitHub, but you need to update some settings (that you found in the steps above) to connect it all to Airtable. Click on "Settings" in the top navigation bar, then select "Build & deploy" from the sidebar on the left, and finally click "Environment" underneath that. Look for a button that says "Edit variables":
-
-![Netlify environment settings](./assets/images/env.png)
-
-These environment settings tell your site how to run specific for your copy of the code. The values you copied before that connect to _your_ Airtable account provided here will populate your site with your data.
-
-Add the following keys and values (key is in all caps, the value is what you copied from Airtable):
+Copy the following snippet into a text file.
 
 ```
 AIRTABLE_API_KEY=key00000000000000
 AIRTABLE_BASE_ID=app00000000000000
-AIRTABLE_EMBED_ID=shr0000000000000
 AIRTABLE_TABLE_NAME=tbl00000000000
-CITY=Provo
-STATE=Utah
+AIRTABLE_EMBED_ID=shr0000000000000
 ```
 
-The final two keys added are the city and state you are creating your site for. This will populate content in the body of the site. The example above uses 000's in place of real keys because you will need to replace those values with the ones that you copied from your Airtable account.
+#### Collect Airtable API key
 
-Hit "Save" once you have added in all 6 or your values and you should have everything connected to Airtable when your site is deployed.
+> Your **API key** is secret, sort of like a key for a safe deposit box. Don't share it.
 
-Scroll to the tope and navigate to the "Deploys" section and Trigger a new deploy with "Trigger Deploy", "Deploy Site" or "Clear cache and deploy site". When it's finished you should be able to click on the link provided by Netlify:
+👉🏼 Visit your [Airtable account](https://airtable.com/account), and find the "API" section.
 
-![Netlify preview deploy](./assets/images/preview-deploy.png)
+👉🏼 Click the "Generate API key" button.
 
-##### Update site name
+![Button to generate API key](./assets/images/generate.png)
 
-You can change the site name or update the domain your site displays in "Settings" > "General" > "Site Details".
+👉🏼 Click on the dots to show your key, and copy it.
+
+![API key to copy](./assets/images/copy-key.png)
+
+👉🏼 Paste the key in your text file as the value for `AIRTABLE_API_KEY`.
+
+For example, if my key were `key123`, it would look like this:
+
+```
+AIRTABLE_API_KEY=key123
+AIRTABLE_BASE_ID=app00000000000000
+AIRTABLE_TABLE_NAME=tbl00000000000
+AIRTABLE_EMBED_ID=shr0000000000000
+```
+
+#### Collect Airtable Base Id
+
+👉🏼 Visit [the Airtable API page](https://airtable.com/api).
+
+👉🏼 Click on the base you just created and renamed for your city.
+
+![An Airtable base ID in the API section](./assets/images/airtable-base-id.gif)
+
+👉🏼 Copy the base id found halfway down the page (highlighted in the gif above).
+
+👉🏼 Paste the id in your text file as the value for `AIRTABLE_BASE_ID`.
+
+For example, if my key were `app123`, it would look like this:
+
+```
+AIRTABLE_API_KEY=key123
+AIRTABLE_BASE_ID=app123
+AIRTABLE_TABLE_NAME=tbl00000000000
+AIRTABLE_EMBED_ID=shr0000000000000
+```
+
+#### Collect Airtable Table Id
+
+👉🏼 Visit the Airtable base you've created for your city by visiting the [Airtable homepage](https://airtable.com/) and then clicking the tile for your base.
+
+You can find your table id in part of the url. After `https://airtable.com/`, copy everything before the next `/`. For example, in the following URL:
+
+`https://airtable.com/tbl6QXLCylcd2ukYr/viw0PQQWbtAfxZ8qa`
+
+The part you need would be `tbl6QXLCylcd2ukYr`.
+
+![An Airtable table ID from the url of your base](./assets/images/airtable-table-id.gif)
+
+👉🏼 Paste the table id in your text file as the value for `AIRTABLE_TABLE_NAME`.
+
+For example, if my table id were `tbl123`, it would look like this:
+
+```
+AIRTABLE_API_KEY=key123
+AIRTABLE_BASE_ID=app123
+AIRTABLE_TABLE_NAME=tbl123
+AIRTABLE_EMBED_ID=shr0000000000000
+```
+
+#### Collect Airtable Embed Id
+
+👉🏼 Click the "Grid View" at the top left of your base.
+
+👉🏼 Select "Submit a Fundraiser". This will take you to the form view, a submission form created automatically, which corresponds to your Airtable base.
+
+👉🏼 Click "Share Form". You should see a link. Copy everything after `https://airtable.com/`.
+
+![Flow to find and copy the embed id](./assets/images/airtable-embed-id.gif)
+
+👉🏼 Paste the embed id in your text file as the value for `AIRTABLE_EMBED_ID`.
+
+For example, if my table id were `shr123`, it would look like this:
+
+```
+AIRTABLE_API_KEY=key123
+AIRTABLE_BASE_ID=app123
+AIRTABLE_TABLE_NAME=tbl123
+AIRTABLE_EMBED_ID=shr123
+```
+
+With all four values collected, you're ready to set up the site.
+
+### 2️⃣ Deploy Your Site
+
+#### Deploy to Netlify
+
+> _Note: We plan to set up instructions for other providers eventually, as well._
+
+👉🏼 Click the button below to begin the process of deploying to Netlify.
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/service-relief/gatsby-starter-service-relief)
+
+👉🏼 Click "Connect to GitHub". (_You should already be logged in, but if you're not, log in_).
+
+![Netlify deploy flow](./assets/images/netlify-connect-github.png)
+
+👉🏼 For the repository name, use something like `service-relief-austin` (_using your city, of course_).
+
+👉🏼 Use the text file with your four Airtable values to populate the prompts for API key, base id, table name, and embed id.
+
+👉🏼 In the final two prompts, specify your city and state. (_We'll use this to personalize your site a bit_).
+
+![Netlify create site](./assets/images/netlify-create-site.png)
+
+👉🏼 Click "Save and Deploy".
+
+It will take a little while for your new site to build. You'll see the message "Site deploy in progress".
+
+When the build is published, you'll see a live green link under the site title:
+
+![Netlify open site](./assets/images/netlify-open-site.png)
+
+#### Customize the site domain
+
+You can set a custom domain in your Netlify site settings. From your site's main admin page on Netlify:
+
+👉🏼 Click "Domain Settings".
+
+![Netlify domain settings](./assets/images/netlify-domain-settings.png)
+
+👉🏼 Under "Custom Domains", click "Add Custom Domain".
+
+![Netlify domain settings](./assets/images/netlify-add-domain.png).
+
+From there, follow the steps to add your domain.
