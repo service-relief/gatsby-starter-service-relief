@@ -1,0 +1,7 @@
+[template.environment]
+	AIRTABLE_API_KEY=add_airtable_api_key
+	AIRTABLE_BASE_ID=add_airtable_base_id
+	AIRTABLE_EMBED_ID=add_airtable_embed_id
+	AIRTABLE_TABLE_NAME=add_airtable_table_name
+	CITY=add_city
+	STATE=add_state
