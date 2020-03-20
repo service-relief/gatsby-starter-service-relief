@@ -7,7 +7,6 @@ module.exports = {
         authorLink: `https://twitter.com/amber1ey`,
         city: `Austin`,
         state: `Texas`,
-        formId: `https://docs.google.com/forms/d/e/1FAIpQLSdWyi2VJbpzrG4Cudn-ULaoPtBbmWHtZaCWwAyblP6WkJEf9g/viewform?embedded=true`,
       },
     },
   ],
