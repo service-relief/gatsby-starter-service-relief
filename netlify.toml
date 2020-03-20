@@ -1,7 +1,7 @@
 [template.environment]
-	AIRTABLE_API_KEY=add_airtable_api_key
-	AIRTABLE_BASE_ID=add_airtable_base_id
-	AIRTABLE_EMBED_ID=add_airtable_embed_id
-	AIRTABLE_TABLE_NAME=add_airtable_table_name
-	CITY=add_city
-	STATE=add_state
+	AIRTABLE_API_KEY="set the airtable api key"
+	AIRTABLE_BASE_ID="set the airtable base id"
+	AIRTABLE_EMBED_ID="set the airtable embed id"
+	AIRTABLE_TABLE_NAME="set the airtable table name"
+	CITY="set your city"
+	STATE="set your state"
