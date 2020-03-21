@@ -5528,10 +5528,10 @@ gatsby-telemetry@^1.2.0:
     stack-utils "1.0.2"
     uuid "3.4.0"
 
-gatsby-theme-service-relief@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-service-relief/-/gatsby-theme-service-relief-0.0.2.tgz#1a601fc321770d725a6458f04877a1937c19a052"
-  integrity sha512-o7Xg+uqn20N8zFvVr3bX2e34vFbQsc2BmpOyGrxSuU3WRQJ/pKk28ziyZmW9l5VZ8tXQ/DogPSUNAWmY3rBokw==
+gatsby-theme-service-relief@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-service-relief/-/gatsby-theme-service-relief-0.0.3.tgz#afc191c9061f274dea0ea619a55d825e869f238f"
+  integrity sha512-HcsK97J73avTKT34QfYUn7UCTMglbNFru5vkvbjJh3jsBhLsjtXb3r5sBiL95havHiJalxG57RstwCWCceRo6A==
   dependencies:
     gatsby-plugin-manifest "^2.2.48"
     gatsby-plugin-page-creator "^2.1.46"
@@ -7561,12 +7561,12 @@ load-json-file@^2.0.0:
     strip-bom "^3.0.0"
 
 loader-fs-cache@^1.0.0:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/loader-fs-cache/-/loader-fs-cache-1.0.2.tgz#54cedf6b727e1779fd8f01205f05f6e88706f086"
-  integrity sha512-70IzT/0/L+M20jUlEqZhZyArTU6VKLRTYRDAYN26g4jfzpJqjipLL3/hgYpySqI9PwsVRHHFja0LfEmsx9X2Cw==
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/loader-fs-cache/-/loader-fs-cache-1.0.3.tgz#f08657646d607078be2f0a032f8bd69dd6f277d9"
+  integrity sha512-ldcgZpjNJj71n+2Mf6yetz+c9bM4xpKtNds4LbqXzU/PTdeAX0g3ytnU1AJMEcTk2Lex4Smpe3Q/eCTsvUBxbA==
   dependencies:
     find-cache-dir "^0.1.1"
-    mkdirp "0.5.1"
+    mkdirp "^0.5.1"
 
 loader-runner@^2.4.0:
   version "2.4.0"
