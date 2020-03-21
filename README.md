@@ -187,9 +187,9 @@ AIRTABLE_EMBED_ID=shr123
 
 With all four values collected, you're ready to set up the site.
 
-### 3️⃣ Deploy Your Site
+## 3️⃣ Deploy Your Site
 
-#### Deploy to Netlify
+### Deploy to Netlify
 
 > _Note: We plan to set up instructions for other providers eventually, as well._
 
@@ -217,7 +217,7 @@ When the build is published, you'll see a live green link under the site title:
 
 ![Netlify open site](./assets/images/netlify-open-site.png)
 
-#### Customize the site domain
+### Customize the site domain
 
 You can set a custom domain in your Netlify site settings. From your site's main admin page on Netlify:
 
@@ -227,10 +227,10 @@ You can set a custom domain in your Netlify site settings. From your site's main
 
 👉🏼 Under "Custom Domains", click "Add Custom Domain".
 
-![Netlify domain settings](./assets/images/netlify-add-domain.png).
+![Netlify domain settings](./assets/images/netlify-add-domain.png)
 
 From there, follow the steps to add your domain.
 
-### 4️⃣ Go Live
+## 4️⃣ Go Live
 
 _@TODO_
