@@ -233,4 +233,16 @@ From there, follow the steps to add your domain.
 
 ## 4️⃣ Go Live
 
-_@TODO_
+### Last Steps
+
+👉🏼 Be sure to clear out the data pre-loaded into the table you created in Airtable. Add in some organizations you know of in your city.
+
+👉🏼 In that Airtable table, there's a column called `Approved`. In order to have any given entry show up on the deployed site, that column needs to be set to `Yes`.
+
+👉🏼 For now, after events are added to Airtable, you need to trigger a manual deploy on Netlify. 
+
+* From the Netlify Overview page of your site, head to the `Deploys` page. 
+* Under the `Trigger deploy` dropdown on the right side of that page, select `Deploy sites`. 
+* After a couple of minutes, Netlify should deploy the latest changes. Refresh your site to double check.
+
+_MORE @TODO_
