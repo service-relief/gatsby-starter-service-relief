@@ -5537,10 +5537,10 @@ gatsby-telemetry@^1.2.1:
     stack-utils "1.0.2"
     uuid "3.4.0"
 
-gatsby-theme-service-relief@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-service-relief/-/gatsby-theme-service-relief-0.0.5.tgz#9aaa74d09dd31be4bbdc102dbb6ee92fee3acdd0"
-  integrity sha512-j7TzapPALAYNMIVPQKwR8ixNmQiQOZUvz66Wgg0AitywFD1ktArjRO+dWmHkJCSUQYEQ/5KBjkuCpdsCU7vHXw==
+gatsby-theme-service-relief@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-service-relief/-/gatsby-theme-service-relief-0.1.0.tgz#8d98e0b643bca4570fe0a144137767aec687e5ab"
+  integrity sha512-+CqdGA8CqDqRMJEhXJkftGw8BWSMfBzdq0Xs6Pdv22cHkVhdnjn0NuUKp2iGCuctBh+Cj6z5X5cya1IOasIcFQ==
   dependencies:
     gatsby-plugin-manifest "^2.2.48"
     gatsby-plugin-page-creator "^2.1.46"
