@@ -5537,7 +5537,7 @@ gatsby-telemetry@^1.2.1:
     stack-utils "1.0.2"
     uuid "3.4.0"
 
-gatsby-theme-service-relief@^0.1.0:
+gatsby-theme-service-relief@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/gatsby-theme-service-relief/-/gatsby-theme-service-relief-0.1.1.tgz#472ffa8d58c43f34b8062c81d689e8f9a93f2a44"
   integrity sha512-bSRlWTvCnN2n/8ksNBN9/2q+C/xDZuQvYEeaIhHLymiSQt6chxFxjhfCyKbwENqXjlO7q2b0ORLZsLNIMhiAxA==

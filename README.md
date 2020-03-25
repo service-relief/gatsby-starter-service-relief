@@ -23,6 +23,7 @@ Using this template you can set up a service relief site without touching any co
   - Create Github Account
   - Create Netlify Account or Zeit Account
   - Create Airtable Account
+- Add Github build webhook (optional)
 
 **2. Set up data source**
 
@@ -245,4 +246,26 @@ From there, follow the steps to add your domain.
 * Under the `Trigger deploy` dropdown on the right side of that page, select `Deploy sites`. 
 * After a couple of minutes, Netlify should deploy the latest changes. Refresh your site to double check.
 
-_MORE @TODO_
+### Build webhook
+
+If you'd like to build out the site on some cadence instead of manually publishing, you can use the Github action and a build webhook to build on an automated schedule (set to two hours, by default).
+
+First -- get a build webhook from Netlify.
+
+1. Navigate to your site
+1. Settings -> Build & Deploy
+1. Continuous Deployment -> Add Build Hook (configure like below)
+
+[Build hook with Netlify](./assets/images/netilfy-builld-hook.png)
+
+Next -- add this build webhook as a secret to your Github repository.
+
+1. First, go to your repo and go to Settings
+1. Next, go to "Secrets"
+1. Add `BUILD_WEBHOOK` with the value we grabbed from Netlify
+
+That's it! Now every two hours your site will deploy with any new approved submissions that have been submitted and vetted. Easy peasy lemon squeezy.
+
+![Github env var](./assets/images/actions-webhook.png)
+
+Note: If you're not interested in doing this, delete the `.github` folder in your cloned starter.

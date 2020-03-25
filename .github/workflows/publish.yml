@@ -1,0 +1,15 @@
+# note: delete the .github folder if you're building manually
+name: BuildSiteOnSchedule
+on:
+  schedule:
+    - cron: "0 */2 * * *" # every two hours
+jobs:
+  curl:
+    runs-on: ubuntu-latest
+    steps:
+      - name: curl
+        env:
+          BUILD_WEBHOOK: ${{ secrets.BUILD_WEBHOOK }}
+        uses: wei/curl@master
+        with:
+          args: -X POST "$BUILD_WEBHOOK"
