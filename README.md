@@ -240,10 +240,10 @@ From there, follow the steps to add your domain.
 
 👉🏼 In that Airtable table, there's a column called `Approved`. In order to have any given entry show up on the deployed site, that column needs to be set to `Yes`.
 
-👉🏼 For now, after events are added to Airtable, you need to trigger a manual deploy on Netlify. 
+👉🏼 For now, after events are added to Airtable, you need to trigger a manual deploy on Netlify.
 
-* From the Netlify Overview page of your site, head to the `Deploys` page. 
-* Under the `Trigger deploy` dropdown on the right side of that page, select `Deploy sites`. 
+* From the Netlify Overview page of your site, head to the `Deploys` page.
+* Under the `Trigger deploy` dropdown on the right side of that page, select `Deploy sites`.
 * After a couple of minutes, Netlify should deploy the latest changes. Refresh your site to double check.
 
 ### Build webhook
@@ -256,7 +256,7 @@ First -- get a build webhook from Netlify.
 1. Settings -> Build & Deploy
 1. Continuous Deployment -> Add Build Hook (configure like below)
 
-[Build hook with Netlify](./assets/images/netilfy-builld-hook.png)
+[Build hook with Netlify](./assets/images/netlify-builld-hook.png)
 
 Next -- add this build webhook as a secret to your Github repository.
 
