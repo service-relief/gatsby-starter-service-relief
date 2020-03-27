@@ -256,7 +256,7 @@ First -- get a build webhook from Netlify.
 1. Settings -> Build & Deploy
 1. Continuous Deployment -> Add Build Hook (configure like below)
 
-[Build hook with Netlify](./assets/images/netlify-builld-hook.png)
+![Build hook with Netlify](./assets/images/netilfy-build-hook.png)
 
 Next -- add this build webhook as a secret to your Github repository.
 
