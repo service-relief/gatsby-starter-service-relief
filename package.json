@@ -15,7 +15,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "gatsby": "^2.19.47",
+    "gatsby": "^4.25.7",
     "gatsby-theme-service-relief": "^0.1.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
